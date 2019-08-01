@@ -1,0 +1,652 @@
+body {
+  font-family: neue-haas-grotesk-text, Poppins, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: rgba(50, 50, 50, 1);
+  margin: 0px;
+  padding: 0px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px 550px 440px 300px;
+  align-content: center;
+  margin: 0 72px;
+}
+
+.item1 {
+  grid-area: 1 / 1 / 1 / 12;
+  display: flex;
+  margin: 0 24px;
+  align-items: center;
+}
+
+.item1-content {
+  max-width: 600px;
+}
+
+.item2 {
+  grid-area: 2 / 1 / 2 / 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 6px 24px 24px 24px;
+  animation-name: fadein-slideup;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.item2-content {
+  background-color: #E9F1F4;
+  background-image: url("../css_grid_portfolio/assets/images/card-arrangement-docs-mockup-@2x.jpg");
+  background-position: 50% 90%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 40px;
+  height: 100%;
+  width: 100%;
+  transition-duration: 1s;
+}
+
+.item2-content:hover {
+  background-size: 101%;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.10);
+}
+
+.item3 {
+  grid-area: 2 / 9 / 2 / 13;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 6px 24px 24px 24px;
+  animation-name: fadein-slideup;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.item3-content {
+  background-color: #6A3CE1;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.24);
+  padding: 40px;
+  height: 100%;
+  width: 100%;
+}
+
+.item4 {
+  grid-area: 3 / 1 / 3 / 5;
+  margin: 24px;
+  animation-name: fadein-slideup;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.item4-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 60px rgba(0, 0, 0, 0.10);
+  border-radius: 5px;
+  padding: 40px 40px 51px 40px;
+  height: 100%;
+  width: 100%;
+  transition-duration: 1s;
+}
+
+.item4-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+img.summer-of-code {
+  width: 300px;
+  height: 300px;
+}
+
+.item4-content:hover {
+  box-shadow: 0px 8px 60px rgba(0, 0, 0, 0.16);
+}
+
+.item5 {
+  grid-area: 3 / 5 / 3 / 13;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 24px;
+  text-align: center;
+  animation-name: fadein-slideup;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.item5-content {
+  background-color: #f7f7f7;
+  background-image: url("../css_grid_portfolio/assets/images/aspace-beanies-@2x.jpg");
+  background-position: 50% 90%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.20);
+  border-radius: 5px;
+  padding: 40px;
+  height: 100%;
+  width: 100%;
+  transition-duration: 1s;
+}
+
+.item5-content:hover {
+  background-size: 101%;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.24);
+}
+
+.item6 {
+  grid-area: 4 / 1 / 4 / 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 24px;
+  text-align: center;
+  animation-name: fadein-slideup;
+  animation-duration: 1s;
+  animation-delay: 1.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.item6-content {
+  background-color: #008280;
+  background-image: url("../css_grid_portfolio/assets/images/daft-punk-minesweeper-1000x750.jpg");
+  background-position: 38% 0%;
+  background-size: 88%;
+  background-repeat: no-repeat;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  box-shadow: none;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition-duration: 1.5s;
+}
+
+.item6-content:hover {
+  opacity: 0.8;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.24);
+}
+
+.item7 {
+  grid-area: 4 / 5 / 4 / 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 24px;
+  animation-name: fadein-slideup;
+  animation-duration: 1s;
+  animation-delay: 1.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.item7-content {
+  background-color: #eaeeef;
+  background-image: url("../css_grid_portfolio/assets/images/airline-checkout-booking-mockup-1000x750.jpg");
+  background-position: 50% 50%;
+  background-size: 92%;
+  background-repeat: no-repeat;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  transition-duration: 1.5s;
+}
+
+.item7-content:hover {
+  opacity: 0.8;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+.item8 {
+  grid-area: 4 / 9 / 4 / 13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px;
+  animation-name: fadein-slideup;
+  animation-duration: 1s;
+  animation-delay: 1.8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.item8-content {
+  background-color: #e38859;
+  background-image: url("../css_grid_portfolio/assets/images/kanye-west-landing-page-mockup-800x600.jpg");
+  background-position: 50% 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.14);
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  transition-duration: 1.5s;
+}
+
+.item8-content:hover {
+  opacity: 0.8;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  grid-area: 5 / 1 / 5 / 12;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 20px;
+  background-color: #F1F3F4;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.footnote-content {
+  background-color: #F1F3F4;
+  padding: 10px 0;
+  width: 100%;
+}
+
+@keyframes fadein-slideup {
+  from {
+    opacity: 0;
+    margin-top: 50px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 24px;
+  }
+}
+
+a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: neue-haas-grotesk-display, Poppins, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 38px;
+  color: #333333;
+  margin-bottom: -0.5px;
+  animation-name: fadein;
+  animation-duration: 1.4s;
+  animation-delay: 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+h2.heading2 {
+  font-family: neue-haas-grotesk-display, Poppins, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 32px;
+  color: #333333;
+  margin: 8px 0 32px 0;
+  text-align: left;
+  max-width: 50%;
+}
+
+h2.heading2--white {
+  color: #fff;
+}
+
+h3.heading3 {
+  font-family: neue-haas-grotesk-display, Poppins, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+}
+
+h3.heading3--white {
+  color: #fff;
+}
+
+p.eyebrow {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-top: -2px;
+  text-align: left;
+}
+
+p.eyebrow--white {
+  color: #fff;
+}
+
+p.body-text {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+p.body-text--white {
+  color: #fff;
+}
+
+p.links {
+  color: #333333;
+  font-size: 12px;
+  letter-spacing: 1.4px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+p.links:hover {
+  text-decoration: underline;
+}
+
+p.footnotes {
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+a.nav-heading {
+  color: #121212;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0px 16px;
+  text-decoration: none;
+}
+
+a.nav-heading:hover {
+  content: "";
+  color: #fff;
+  width: 0;
+  height: 1px;
+  background-color: #1a1a1a;
+  z-index: 1;
+  transition: width .5s ease-in-out;
+}
+
+@media only screen and (max-width: 1300px) {
+  .grid-container {
+    grid-template-rows: 100px 500px 380px 300px;
+    margin: 0 48px;
+  }
+
+  .item2 {
+    grid-area: 2 / 1 / 2 / 8;
+  }
+
+  .item3 {
+    grid-area: 2 / 8 / 2 / 13;
+  }
+
+  .item4 {
+    display: flex;
+  }
+
+  .item4-content {
+    padding: 0;
+  }
+
+  img.summer-of-code {
+    width: 280px;
+    height: 280px;
+  }
+
+  .item5-content {
+    background-position: 50% 100%;
+  }
+
+  .item6-content {
+    background-position: center;
+    background-size: 100%;
+  }
+
+  h2.heading2 {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .grid-container {
+    grid-template-rows: 80px 500px 380px 260px;
+    margin: 0 32px;
+  }
+
+  .item2 {
+    grid-area: 2 / 1 / 2 / 7;
+  }
+
+  .item2-content {
+    background-position: 50% 100%;
+  }
+
+  .item3 {
+    grid-area: 2 / 7 / 2 / 13;
+  }
+
+  img.summer-of-code {
+    width: 240px;
+    height: 240px;
+  }
+
+  h2.heading2 {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .grid-container {
+    grid-template-rows: 80px 500px 380px 240px;
+    margin: 0 28px;
+  }
+
+  img.summer-of-code {
+    width: 200px;
+    height: 200px;
+  }
+
+  h2.heading2 {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .item2-content {
+    padding: 32px;
+    background-size: 160%;
+  }
+
+  .item2-content:hover {
+    background-size: 162%;
+  }
+
+  .item3-content {
+    padding: 32px;
+  }
+
+  .item4 {
+    grid-area: 3 / 1 / 3 / 7;
+    display: flex;
+  }
+
+  img.summer-of-code {
+    width: 240px;
+    height: 240px;
+  }
+
+  .item5 {
+    grid-area: 3 / 7 / 3 / 13;
+  }
+
+  .item5-content {
+    padding: 32px;
+    background-size: 170%;
+    background-position: 40% 100%;
+  }
+
+  .item5-content:hover {
+    background-size: 172%;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  h2.heading2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-rows: 80px 400px 400px 380px 260px 260px;
+    margin: 0 16px;
+  }
+
+  .item2 {
+    grid-area: 2 / 1 / 2 / 13;
+    margin: 0 16px 8px 16px;
+  }
+
+  .item2-content {
+    background-size: 80%;
+  }
+
+  .item2-content:hover {
+    background-size: 82%;
+  }
+
+  .item3 {
+    grid-area: 3 / 1 / 3 / 13;
+    margin: 8px 16px;
+  }
+
+  .item4 {
+    grid-area: 5 / 1 / 5 / 7;
+    display: flex;
+    margin: 8px 16px;
+  }
+
+  img.summer-of-code {
+    width: 200px;
+    height: 200px;
+  }
+
+  .item5 {
+    grid-area: 4 / 1 / 4 / 13;
+    margin: 8px 16px;
+  }
+
+  .item5-content {
+    background-position: 50% 100%;
+    background-size: 100%;
+    box-shadow: 0px 5px 24px rgba(0, 0, 0, 0.16);
+  }
+
+  .item5-content:hover {
+    background-size: 102%;
+  }
+
+  .item6 {
+    grid-area: 5 / 7 / 5 / 13;
+    margin: 8px 16px;
+  }
+
+  .item7 {
+    grid-area: 6 / 1 / 6 / 7;
+    margin: 16px;
+  }
+
+  .item8 {
+    grid-area: 6 / 7 / 6 / 13;
+    margin: 8px 16px;
+  }
+
+  h1 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  h2.heading2 {
+    font-size: 22px;
+    line-height: 28px;
+    max-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .grid-container {
+    grid-template-rows: 80px 400px 400px 340px 220px 220px;
+    margin: 0 8px;
+  }
+
+  img.summer-of-code {
+    width: 150px;
+    height: 150px;
+  }
+
+  p.body-text {
+    font-size: 14px;
+  }
+}
